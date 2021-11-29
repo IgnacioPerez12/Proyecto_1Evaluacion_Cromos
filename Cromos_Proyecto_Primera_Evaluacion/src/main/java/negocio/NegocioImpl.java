@@ -424,9 +424,14 @@ public class NegocioImpl implements IntNegocio, IntPerfilNegocio {
                             System.out.println("\n TU COLECCION DE CARTAS:");
                             System.out.println("-------------------------\n");
                             List<Carta> listarCartaDeUsuaio = datos_carta.listarCartasUsuario(checkLogin);
-                            listarCartaDeUsuaio.forEach(cartaUsuario -> {
-                                System.out.println("ID: " + cartaUsuario.getId_carta() + " || Nombre Jugador: " + cartaUsuario.getNombreJugador() + " || Equipo: " + cartaUsuario.getEquipo() + " || Posicion: " + cartaUsuario.getPosicion() + " || Media: " + cartaUsuario.getMedia() + " || Ataque: " + cartaUsuario.getAtaque() + " || Defensa: " + cartaUsuario.getDefensa() + " || Tipo de carta: " + cartaUsuario.getEdicion());
-                            });
+                            if(listarCartaDeUsuaio.isEmpty()){
+                                System.out.println("No tienes ningun cromo en tu coleccion");
+                            } else {
+                                listarCartaDeUsuaio.forEach(cartaUsuario -> {
+                                    System.out.println("ID: " + cartaUsuario.getId_carta() + " || Nombre Jugador: " + cartaUsuario.getNombreJugador() + " || Equipo: " + cartaUsuario.getEquipo() + " || Posicion: " + cartaUsuario.getPosicion() + " || Media: " + cartaUsuario.getMedia() + " || Ataque: " + cartaUsuario.getAtaque() + " || Defensa: " + cartaUsuario.getDefensa() + " || Tipo de carta: " + cartaUsuario.getEdicion());
+                                });
+                            }
+
                             break;
 
                             //Perfil usuario TxT
@@ -629,9 +634,14 @@ public class NegocioImpl implements IntNegocio, IntPerfilNegocio {
                                         //Ver mi pedidos
                                         List<Pedidos> listarpedidosUsuario = datos_pedidos.listarPedidos(checkLogin);
                                         System.out.println("\nUsuario: " + checkLogin.getEmail());
-                                        listarpedidosUsuario.forEach(pedidoUsuario -> {
-                                            System.out.println("ID Pedido: " + pedidoUsuario.getId_pedido() + " || ID Sobre: " + pedidoUsuario.getId_sobres()+ " || Cantidad: " + pedidoUsuario.getCantidad() + " || Fecha Alta: " + pedidoUsuario.getFecha_alta());
-                                        });
+                                        if (listarpedidosUsuario.isEmpty()){
+                                            System.out.println("No has realizado pedidos");
+                                        } else {
+                                            listarpedidosUsuario.forEach(pedidoUsuario -> {
+                                                System.out.println("ID Pedido: " + pedidoUsuario.getId_pedido() + " || ID Sobre: " + pedidoUsuario.getId_sobres()+ " || Cantidad: " + pedidoUsuario.getCantidad() + " || Fecha Alta: " + pedidoUsuario.getFecha_alta());
+                                            });
+                                        }
+                                        
                                         break;
                                         
                                     case 0:
