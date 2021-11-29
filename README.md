@@ -2,9 +2,9 @@
 
 PSP &amp; Acceso a Datos
 
-Descripción breve:
+**Descripción breve:**
 
-Programa con Java para las asignaturas psp y acceso a datos.
+- Programa con Java para las asignaturas psp y acceso a datos.
 
 # Índice
 
@@ -23,7 +23,7 @@ Programa con Java para las asignaturas psp y acceso a datos.
 - [Conclusiones]
 
 
-## Introducción (#id=1)
+## Introducción
 
 Mi idea para el proyecto es una colección de cromos de futbolistas, la cual para ir aumentando su colección tiene que comprar sobres.
 
