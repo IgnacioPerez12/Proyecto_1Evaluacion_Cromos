@@ -8,19 +8,19 @@ PSP &amp; Acceso a Datos
 
 # Índice
 
-- [Introducción]
+- Introducción
 
-- [Modelo de datos]
+- Modelo de datos
 
-- [Diagrama de clases]
+- Diagrama de clases
 
-- [Funcionamiento del programa]
+- Funcionamiento del programa
 
-- [Explicación de los métodos]
+- Explicación de los métodos
 
-- [Siguientes pasos]
+- Siguientes pasos
 
-- [Conclusiones]
+- Conclusiones
 
 
 ## Introducción
