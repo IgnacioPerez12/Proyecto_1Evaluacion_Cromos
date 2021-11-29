@@ -8,19 +8,19 @@ Programa con Java para las asignaturas psp y acceso a datos.
 
 # Índice
 
-- [Introducción](#1)
+- [Introducción]
 
-- [Modelo de datos](#_Toc89017173)
+- [Modelo de datos]
 
-- [Diagrama de clases](#_Toc89017174)
+- [Diagrama de clases]
 
-- [Funcionamiento del programa](#_Toc89017175)
+- [Funcionamiento del programa]
 
-- [Explicación de los métodos](#_Toc89017176)
+- [Explicación de los métodos]
 
-- [Siguientes pasos](#_Toc89017177)
+- [Siguientes pasos]
 
-- [Conclusiones](#_Toc89017178)
+- [Conclusiones]
 
 
 ## Introducción (#id=1)
