@@ -63,7 +63,7 @@ Mi programa lo he dividido en 6 paquetes:
 El programa para poder acceder a el te solicita una cuenta o, sino que te crees una, una vez has iniciado sesion el programa analiza si el usuario es un administardor o un cliente, dependiendo de eso te muestra funciones distintas:
 
 
-- **Administrador:**
+**Administrador:**
 
 Es el encargado de hacer las funciones CRUD:
 
@@ -71,13 +71,13 @@ Es el encargado de hacer las funciones CRUD:
 
 Dividido en tres bloques con las mismas funciones para las diferentes tablas o archivos de texto:
 
-    - Usuarios
-    - Cartas
-    - Sobres
-    - Perfil Usuario
+    · Usuarios
+    · Cartas
+    · Sobres
+    · Perfil Usuario
 
 
-- **Cliente:**
+**Cliente:**
 
 El apartado cliente se divide en 4 opciones:
 
@@ -93,11 +93,11 @@ Inventario: Permite al usaurio administrar sus sobre y abrirlos cuando el deseé
 
 ## Explicación de los métodos
 
-**Perfil**
+**Perfil:**
 
-Ver mi perfil: Para imprimir el perfil de un usuario especifico he implementado el metodo Buscar() mediante el ID que lo saco del inicio de sesion.
+**Ver mi perfil:** Para imprimir el perfil de un usuario especifico he implementado el metodo Buscar() mediante el ID que lo saco del inicio de sesion.
 
-Crear mi perfil: Para crear el perfil, primero compruebo que le archivo txt existe sino lo creo. Una vez comprobado le pido al usuario que meta los valores de los campos y elija un estado de ánimo que se introduce mediante un enum.
+**Crear mi perfil:** Para crear el perfil, primero compruebo que le archivo txt existe sino lo creo. Una vez comprobado le pido al usuario que meta los valores de los campos y elija un estado de ánimo que se introduce mediante un enum.
 
 Con toda la informacion llamamos al metodo Escribir() y le pasamos los datos que escribe en una nueva linea del txt
 
@@ -107,23 +107,23 @@ Realizamos un switch con los case de los distintos campos del perfil, caundo ent
 
 Si el campo elegido por el cliente es el correo o la contraseña ademas de modificar el archivo txt realizamos un update en la tabla de la base de datos.
 
-Eliminar mi perfil: El metodo borrar lo que se encarga es de eliminar la linea donde esta el perfil del usuario. Para hacer eso lo que hacemos es una comparacion de la lectura linea por linea con la busqueda del ID que hemos cogido del inicio de sesion.
+**Eliminar mi perfil:** El metodo borrar lo que se encarga es de eliminar la linea donde esta el perfil del usuario. Para hacer eso lo que hacemos es una comparacion de la lectura linea por linea con la busqueda del ID que hemos cogido del inicio de sesion.
 
 Si la busqueda es == a la lectura esa linea la salta y no la escribe en un nuevo archivo, al terminar la lectura elimina el archivo anterior y se queda el nuevo con el mismo nombre.
 
-**Tienda**
+**Tienda:**
 
-Comprar sobres: Para comprar un sobre al usuario le mostramos como forma de guia todos los sobres disponibles con un list y le pedimos por teclado el id del sobre, una vez selecciona uno le pedimos la cantidad de sobres que quiere comprar.
+**Comprar sobres:** Para comprar un sobre al usuario le mostramos como forma de guia todos los sobres disponibles con un list y le pedimos por teclado el id del sobre, una vez selecciona uno le pedimos la cantidad de sobres que quiere comprar.
 
 Para poder restar el precio del sobre al saldo mediante list obtenemos los dos valores y los encapsulamos. Luego creamos un objeto usuario y le restamos el saldo en el campo del saldo, y usamos el metodo modificar().
 
 Hacemos otro list a la tabla sobre\_en\_usuario para saber si ese sobre ya lo tiene el usuario, si lo tiene sumamos los que tiene a la cantida de antes, si no lo tiene hacemos un insert con el sobre y la cantidad.
 
-Añadir saldo: Para añadir saldo al usuario le pedimos que nos meta por teclado la cantidad de saldo que quiere meter, teniendo el saldo creamos un nuevo objeto de tipo usuario en el cual metemos mediante los getter los valores del usuario y en el saldo sumamos el saldo que nos ha metido por teclado.
+**Añadir saldo:** Para añadir saldo al usuario le pedimos que nos meta por teclado la cantidad de saldo que quiere meter, teniendo el saldo creamos un nuevo objeto de tipo usuario en el cual metemos mediante los getter los valores del usuario y en el saldo sumamos el saldo que nos ha metido por teclado.
 
-Ver saldo: Para el saldo del usuario hacemos un SELECT con un WHERE en el cual le pedimos el ID\_USUARIO que ya lo tenemos del inicio de sesion.
+**Ver saldo:** Para el saldo del usuario hacemos un SELECT con un WHERE en el cual le pedimos el ID\_USUARIO que ya lo tenemos del inicio de sesion.
 
-Ver mi pedido: Para mostrar los pedidos de un usuario hacemos un SELECT con un WHERE en el cual le pedimos el ID\_USUARIO que ya lo tenemos del inicio de sesion.
+**Ver mi pedido:** Para mostrar los pedidos de un usuario hacemos un SELECT con un WHERE en el cual le pedimos el ID\_USUARIO que ya lo tenemos del inicio de sesion.
 
 ## Siguientes pasos
 
