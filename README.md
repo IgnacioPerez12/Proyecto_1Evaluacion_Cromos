@@ -1,36 +1,27 @@
-![Shape4](RackMultipart20211129-4-1r758m3_html_88ca72848c8775.gif) ![Shape2](RackMultipart20211129-4-1r758m3_html_276988eacf78118f.gif) ![Shape3](RackMultipart20211129-4-1r758m3_html_2a9a11485b7ee6dc.gif) ![Shape1](RackMultipart20211129-4-1r758m3_html_54b7cf8a4afa4815.gif)
-
-Ignacio Pérez Jiménez
-
-Ignacioperezjimenez01@gmail.com
-
-Descripción breve
-
-Programa con Java para las asignaturas psp y acceso a datos.
-
-# Proyecto
-
-# 1º Evaluacion
+# Proyecto - 1º Evaluacion
 
 PSP &amp; Acceso a Datos
 
+Descripción breve:
+
+Programa con Java para las asignaturas psp y acceso a datos.
+
 # Índice
 
-[Introducción 2](#_Toc89017172)
+- [Introducción](#_Toc89017172)
 
-[Modelo de datos 2](#_Toc89017173)
+- [Modelo de datos](#_Toc89017173)
 
-[Diagrama de clases 3](#_Toc89017174)
+- [Diagrama de clases](#_Toc89017174)
 
-[Funcionamiento del programa 3](#_Toc89017175)
+- [Funcionamiento del programa](#_Toc89017175)
 
-[Explicación de los métodos 5](#_Toc89017176)
+- [Explicación de los métodos](#_Toc89017176)
 
-[Siguientes pasos 6](#_Toc89017177)
+- [Siguientes pasos](#_Toc89017177)
 
-[Conclusiones 6](#_Toc89017178)
+- [Conclusiones](#_Toc89017178)
 
-##
 
 ## Introducción
 
@@ -60,21 +51,17 @@ Mi programa lo he dividido en 6 paquetes:
 - Negocio
   - Es la encargada del manejo lógico de la aplicación
 
-![](RackMultipart20211129-4-1r758m3_html_3d90445a581789db.png)
+![Imagen del Diagrama de Clases](https://raw.githubusercontent.com/IgnacioPerez12/Proyecto_1Evaluacion_Cromos/master/recursos/paquetes.png)
 
 ## Diagrama de clases
 
-![](RackMultipart20211129-4-1r758m3_html_6713a470008f727c.png)
+![Imagen del Diagrama de Clases](https://raw.githubusercontent.com/IgnacioPerez12/Proyecto_1Evaluacion_Cromos/master/recursos/Diagrama_Clases.png)
 
-##
 
 ## Funcionamiento del programa
 
-E ![](RackMultipart20211129-4-1r758m3_html_9df25d2e96edb298.png) l programa para poder acceder a el te solicita una cuenta o, sino que te crees una,
+El programa para poder acceder a el te solicita una cuenta o, sino que te crees una, una vez has iniciado sesion el programa analiza si el usuario es un administardor o un cliente, dependiendo de eso te muestra funciones distintas:
 
-Una vez has iniciado sesion el programa analiza si el usuario es un administardor o un cliente, dependiendo de eso te muestra funciones distintas:
-
-![](RackMultipart20211129-4-1r758m3_html_b5940e56db289139.png)
 
 - **Administrador:**
 
@@ -89,6 +76,7 @@ Dividido en tres bloques con las mismas funciones para las diferentes tablas o a
     - Sobres
     - Perfil Usuario
 
+
 - **Cliente:**
 
 El apartado cliente se divide en 4 opciones:
@@ -101,7 +89,7 @@ Tienda: El apartado tienda se divide en 4 opciones más, las opcion 1 y 2 serian
 
 Inventario: Permite al usaurio administrar sus sobre y abrirlos cuando el deseé aumentando asi su colección de cromos.
 
-![](RackMultipart20211129-4-1r758m3_html_87cc07d46e5ffaa4.png) ![](RackMultipart20211129-4-1r758m3_html_1cba592c40a38e6c.png) ![](RackMultipart20211129-4-1r758m3_html_992f959368769ca8.png)
+
 
 ## Explicación de los métodos
 
@@ -154,3 +142,5 @@ Ver mi pedido: Para mostrar los pedidos de un usuario hacemos un SELECT con un W
 ## Conclusiones
 
 Me parece más sencillo manejar información mediante sql que mediante archivos de txt, aunque visualizarlo por la consola limita mucho algunas funciones y lo hace más lioso.
+
+
