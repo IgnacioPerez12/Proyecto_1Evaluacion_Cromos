@@ -81,13 +81,17 @@ Dividido en tres bloques con las mismas funciones para las diferentes tablas o a
 
 El apartado cliente se divide en 4 opciones:
 
-Mi Coleccion: Muestra todas las cartas que tiene el usuario en su posesion.
+**Mi Coleccion:**
+- Muestra todas las cartas que tiene el usuario en su posesion.
 
-Mi Perfil: En el perfil del usuario podra ver su perfil y si no tiene crearlo, tambien podra modificarlo o eliminarlo. Todos los perfiles se almacena en un archivo txt.
+**Mi Perfil:**
+- En el perfil del usuario podra ver su perfil y si no tiene crearlo, tambien podra modificarlo o eliminarlo. Todos los perfiles se almacena en un archivo txt.
 
-Tienda: El apartado tienda se divide en 4 opciones más, las opcion 1 y 2 serian las opciones principales. Las demas opciones permiten al usuario obtener informacion de su cuenta.
+**Tienda:**
+- El apartado tienda se divide en 4 opciones más, las opcion 1 y 2 serian las opciones principales. Las demas opciones permiten al usuario obtener informacion de su cuenta.
 
-Inventario: Permite al usaurio administrar sus sobre y abrirlos cuando el deseé aumentando asi su colección de cromos.
+**Inventario:**
+- Permite al usaurio administrar sus sobre y abrirlos cuando el deseé aumentando asi su colección de cromos.
 
 
 
@@ -97,24 +101,18 @@ Inventario: Permite al usaurio administrar sus sobre y abrirlos cuando el deseé
 
 **Ver mi perfil:** Para imprimir el perfil de un usuario especifico he implementado el metodo Buscar() mediante el ID que lo saco del inicio de sesion.
 
-**Crear mi perfil:** Para crear el perfil, primero compruebo que le archivo txt existe sino lo creo. Una vez comprobado le pido al usuario que meta los valores de los campos y elija un estado de ánimo que se introduce mediante un enum.
+**Crear mi perfil:** Para crear el perfil, primero compruebo que le archivo txt existe sino lo creo. Una vez comprobado le pido al usuario que meta los valores de los campos y elija un estado de ánimo que se introduce mediante un enum. Con toda la informacion llamamos al metodo Escribir() y le pasamos los datos que escribe en una nueva linea del txt
 
-Con toda la informacion llamamos al metodo Escribir() y le pasamos los datos que escribe en una nueva linea del txt
-
-Modificar mi perfil: Para modificar el perfil al usuario le pedimos que campo quiere modificar, una vez teniendo el campo, hacemos una busqueda del usuario mediante la ID y nos creamos un nuevo perfilUsuario para poder manupularlo.
-
+**Modificar mi perfil:** Para modificar el perfil al usuario le pedimos que campo quiere modificar, una vez teniendo el campo, hacemos una busqueda del usuario mediante la ID y nos creamos un nuevo perfilUsuario para poder manupularlo.
 Realizamos un switch con los case de los distintos campos del perfil, caundo entre en algun case llamamos al usuario y seteamos ese campo por el que nos mete mediante teclado.
-
 Si el campo elegido por el cliente es el correo o la contraseña ademas de modificar el archivo txt realizamos un update en la tabla de la base de datos.
 
 **Eliminar mi perfil:** El metodo borrar lo que se encarga es de eliminar la linea donde esta el perfil del usuario. Para hacer eso lo que hacemos es una comparacion de la lectura linea por linea con la busqueda del ID que hemos cogido del inicio de sesion.
-
 Si la busqueda es == a la lectura esa linea la salta y no la escribe en un nuevo archivo, al terminar la lectura elimina el archivo anterior y se queda el nuevo con el mismo nombre.
 
 **Tienda:**
 
 **Comprar sobres:** Para comprar un sobre al usuario le mostramos como forma de guia todos los sobres disponibles con un list y le pedimos por teclado el id del sobre, una vez selecciona uno le pedimos la cantidad de sobres que quiere comprar.
-
 Para poder restar el precio del sobre al saldo mediante list obtenemos los dos valores y los encapsulamos. Luego creamos un objeto usuario y le restamos el saldo en el campo del saldo, y usamos el metodo modificar().
 
 Hacemos otro list a la tabla sobre\_en\_usuario para saber si ese sobre ya lo tiene el usuario, si lo tiene sumamos los que tiene a la cantida de antes, si no lo tiene hacemos un insert con el sobre y la cantidad.
