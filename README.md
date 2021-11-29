@@ -8,7 +8,7 @@ Programa con Java para las asignaturas psp y acceso a datos.
 
 # Índice
 
-- [Introducción](#_Toc89017172)
+- [Introducción](#1)
 
 - [Modelo de datos](#_Toc89017173)
 
@@ -23,7 +23,7 @@ Programa con Java para las asignaturas psp y acceso a datos.
 - [Conclusiones](#_Toc89017178)
 
 
-## Introducción
+## Introducción (#id=1)
 
 Mi idea para el proyecto es una colección de cromos de futbolistas, la cual para ir aumentando su colección tiene que comprar sobres.
 
